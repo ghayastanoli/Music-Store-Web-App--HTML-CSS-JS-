@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+}
+
+/* body{
+    width: 100%;
+} */
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically (if desired) */
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+    margin: 0; /* Resets default margins */
+    background-color: #f5f5f5; /* Optional: Background color for better contrast */
+}
+
+.container {
+    max-width: 1350px; /* Restricts the width of the content */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: white; /* Optional: Ensures a visible background */
+}
+
+
+.header{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    height: 4.8rem;
+    padding: 0 0.8rem;
+    gap: 3rem;
+    border-bottom: 1px solid rgb(241, 238, 238);
+}
+/* .container{
+    max-width: 1350px;
+} */
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* .nav-list-search {
+    padding-left: 30px; /* Add space to the left for the icon */
+    /* height: 35px; Adjust height to fit the icon  */
+    /* font-size: 16px; */
+/* }  */
+
+.search-icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 25px; 
+    color: gray; 
+    pointer-events: none; 
+}
+
+
+.nav-list-search{
+    width: 30rem;
+    height: 2.6rem;
+    padding: 0 2rem;
+    background-color: rgb(241, 238, 238);
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    padding-left: 40px;
+    font-size: 0.9rem;
+}
+
+.logo-img{
+height: 3rem;
+}
+
+.nav-list-num{
+    align-items: center;
+    color: #0072ba;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 0.2;
+
+}
+.nav-sen, .nav-sen2{
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: 300;
+}
+
+.nav-list-contact{
+    line-height: 0.9;
+    padding-top: 8px;
+}
+.span1{
+    font-weight: 500;
+}
+
+.nav-list-account{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    margin-top: -4px;
+} 
+
+.nav-icon{
+    font-size: 24px; /* Sets the size of the icon */
+    transform: scale(1.5); /* Increases the size of the icon */
+    vertical-align: middle;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+}
+
+.cat-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(241, 238, 238);
+    
+}
+
+.cat-item {
+    position: relative; /* To allow absolute positioning of the icon */
+    padding-right: 25px; /* Add padding to make space for the icon */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 2; /* Adjust spacing between items */
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.right-icon {
+    position: absolute;
+    right: 10px; /* Position the icon 10px from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 16px; /* Adjust icon size */
+    color: gray; /* Adjust icon color */
+}
+
+
+
+
+.hero {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 65% 35%; /* Adjust column widths */
+    gap: 1rem; /* Adds spacing between the columns */
+    width: 100%; /* Ensures the hero section takes the full width */
+    height: 440px;
+    align-items: start; /* Align items to the start to fit content height */
+
+}
+
+.heroimg2 {
+
+    width: 97.1%;
+    height: auto;
+    padding-top: 7px;
+}
+.heroimg1{
+    width: 100%; /* Ensures the images take the full width of their column */
+    height: 75%; /* Keeps the height proportional to the image's aspect ratio */
+    padding-left: 19px;
+    padding-top: 8px;
+}
+
+
+/* .btn1{
+    width: 100%;
+    background-color: black;
+    height: 45px;
+    color: white;
+
+} */
+/* .btn1 {
+    width: 1334px; 
+    max-width: 100%; 
+    background-color: black;
+    height: 45px;
+    color: white;
+    margin: 0 10px; 
+    display: block; 
+}
+
+
+.btn1s{
+    font-weight: 500;
+    margin: 0 2px;
+} */
+
+
+.btn1 {
+    width: 1334px; /* Sets the button width explicitly */
+    max-width: 100%; /* Prevents overflow */
+    background-color: black;
+    height: 45px;
+    color: white;
+    margin: 0 10px;
+    display: flex; /* Enables flexible layout for children */
+    align-items: center; /* Vertically aligns the content inside the button */
+    justify-content: center; /* Horizontally centers the content */
+    gap: 10px; /* Adds space between the image and text */
+    padding: 0 10px; /* Adds horizontal padding inside the button */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Optional: Makes corners rounded */
+    cursor: pointer;
+}
+
+.btn-logo {
+    height: 45px; /* Adjust the height of the logo */
+    width: auto; /* Maintains aspect ratio */
+    display: inline-block;
+}
+
+.box-pop-cat {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(7, 1fr); /* Creates 7 equal-width columns */
+    gap: 20px; /* Adds space between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 20px; /* Adds padding around the grid */
+}
+
+.item-pop-cat {
+    text-align: center; /* Centers text under each item */
+}
+
+.item-pop-cat img {
+    width: 120px; /* Increase width to make the circle larger */
+    height: 120px; /* Match height to width for a perfect circle */
+    border-radius: 50%; /* Ensures the circular shape */
+    background-color: #f0f0f0; /* Light grey background for the circle */
+    padding: 20px; /* Adjust padding to add space around the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+    object-fit: contain; /* Ensures the image fits well inside the circle */
+
+}
+
+.item-pop-cat p {
+    margin-top: 10px; /* Adds space between the image and text */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Dark text color */
+}
+.item-pop-cat:hover img {
+    width: 120px; /* Increase width to make the circle larger */
+    height: 120px; /* Match height to width for a perfect circle */
+    border-radius: 50%;
+    border: 2px solid blue;
+    transition: all 0.3s;
+}
+
+.item-pop-cat:hover p {
+    color: blue; /* Change the text color */
+    font-weight: bold; /* Optional: Make the text bold */
+    transform: scale(1.1); /* Slightly enlarge the text */
+    transition: all 0.3s; /* Smooth transition */
+    
+}
+
+
+
+
+.heading-primary{
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.fifth-section{
+    max-width: 1350px;
+}
+.brand-item{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    padding: 0 4rem;
+    gap: 2rem;
+}
+
+.brand-item img:hover{
+    border-bottom: 2px solid blue;
+    transition: all 0.3s;
+    
+}
