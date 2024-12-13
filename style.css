@@ -145,20 +145,44 @@ height: 3rem;
 
 
 
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 6px;
+}
+
 .hero {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    max-width: 100%;
-
+    align-items: center;
+    gap: 0.5rem; 
 }
 
-.hero-img-big{
-    max-width: 70%;
+.hero-img-big,
+.hero-img-sm {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
-.hero-img-sm{
-    max-width: 30%;
+
+.hero-img-big {
+    width: 65%; /* Adjust as needed */
 }
+
+.hero-img-sm {
+    width: 35%; /* Adjust as needed */
+}
+
+.heroimg1,
+.heroimg2 {
+    display: block; /* Remove inline spacing */
+    width: 100%; /* Ensure image takes full width of parent */
+    height: 455px; /* Maintain aspect ratio */
+    margin: 0; /* Remove extra space */
+}
+
 
 .button{
     max-width: 100%;
@@ -168,10 +192,10 @@ height: 3rem;
 
 .button{
     display: flex;
-    justify-content: center; /* Horizontally centers the button */
-    align-items: center; /* Vertically centers content, if needed */
-    max-width: 100%; /* Ensures full width for centering */
-    padding: 15px 0; /* Optional: Adds vertical spacing around the button */
+    justify-content: center; 
+    align-items: center; 
+    max-width: 100%; 
+    padding: 3px 0; 
     background-color: black;
 }
 .btn1 {
@@ -186,7 +210,7 @@ height: 3rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap; 
 }
 
 .btn-logo {
@@ -196,9 +220,9 @@ height: 3rem;
 }
 
 .pop-cat-container {
-    max-width: 1350px; /* Adjust to desired width */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 0 20px; /* Adds horizontal padding for responsiveness */
+    max-width: 1350px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 .box-pop-cat {
     display: grid; 
@@ -253,14 +277,14 @@ height: 3rem;
     color: #333;
 }
 .fifth-sec-container {
-    max-width: 1350px; /* Adjust to desired width */
-    margin: 0 auto; /* Centers content horizontally */
-    padding: 0 20px; /* Adds padding for responsiveness */
+    max-width: 1350px;
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .fifth-section {
-    padding: 40px 0; /* Adds vertical spacing */
-    text-align: center; /* Centers the heading text */
+    padding: 40px 0; 
+    text-align: center; 
 }
 .brand-item{
     display: flex;
@@ -280,9 +304,9 @@ height: 3rem;
 }
 
 .ban-container {
-    max-width: 1350px; /* Adjust to desired width */
-    margin: 0 auto; /* Centers content horizontally */
-    padding: 0 20px; /* Adds padding for responsiveness */
+    max-width: 1350px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
   }
 
   .sixth-section{
