@@ -5,30 +5,27 @@
     font-family: inter, sans-serif;
 }
 
-/* body{
-    width: 100%;
-} */
-
 body {
     width: 100%;
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically (if desired) */
-    min-height: 100vh; /* Ensures the body takes the full viewport height */
-    margin: 0; /* Resets default margins */
-    background-color: #f5f5f5; /* Optional: Background color for better contrast */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 0;
+    background-color: #f5f5f5; 
+    overflow-x: hidden;
 }
 
-.container {
-    max-width: 1350px; /* Restricts the width of the content */
-    margin: 0 auto; /* Centers the container horizontally */
-    background-color: white; /* Optional: Ensures a visible background */
-}
+/* .container {
+    max-width: 1350px; 
+    margin: 0 auto; 
+    background-color: white; 
+} */
 
 
 .header{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -53,11 +50,6 @@ body {
     display: inline-block;
 }
 
-/* .nav-list-search {
-    padding-left: 30px; /* Add space to the left for the icon */
-    /* height: 35px; Adjust height to fit the icon  */
-    /* font-size: 16px; */
-/* }  */
 
 .search-icon {
     position: absolute;
@@ -118,8 +110,8 @@ height: 3rem;
 } 
 
 .nav-icon{
-    font-size: 24px; /* Sets the size of the icon */
-    transform: scale(1.5); /* Increases the size of the icon */
+    font-size: 24px; 
+    transform: scale(1.5); 
     vertical-align: middle;
 }
 .categories{
@@ -140,10 +132,10 @@ height: 3rem;
 }
 
 .cat-item {
-    position: relative; /* To allow absolute positioning of the icon */
-    padding-right: 25px; /* Add padding to make space for the icon */
-    font-size: 16px; /* Adjust font size as needed */
-    line-height: 2; /* Adjust spacing between items */
+    position: relative; 
+    padding-right: 25px; 
+    font-size: 16px; 
+    line-height: 2; 
     font-weight: 600;
     font-size: 0.75rem;
     color: #333;
@@ -151,11 +143,11 @@ height: 3rem;
 
 .right-icon {
     position: absolute;
-    right: 10px; /* Position the icon 10px from the right edge */
+    right: 10px; 
     top: 50%;
-    transform: translateY(-50%); /* Center the icon vertically */
-    font-size: 16px; /* Adjust icon size */
-    color: gray; /* Adjust icon color */
+    transform: translateY(-50%); 
+    font-size: 16px; 
+    color: gray; 
 }
 
 
@@ -164,11 +156,11 @@ height: 3rem;
 .hero {
     display: grid;
     justify-content: center;
-    grid-template-columns: 65% 35%; /* Adjust column widths */
-    gap: 1rem; /* Adds spacing between the columns */
-    width: 100%; /* Ensures the hero section takes the full width */
+    grid-template-columns: 65% 35%; 
+    gap: 1rem; 
+    width: 100%; 
     height: 440px;
-    align-items: start; /* Align items to the start to fit content height */
+    align-items: start; 
 
 }
 
@@ -179,102 +171,76 @@ height: 3rem;
     padding-top: 7px;
 }
 .heroimg1{
-    width: 100%; /* Ensures the images take the full width of their column */
-    height: 75%; /* Keeps the height proportional to the image's aspect ratio */
+    width: 100%; 
+    height: 75%; 
     padding-left: 19px;
     padding-top: 8px;
 }
 
-
-/* .btn1{
-    width: 100%;
-    background-color: black;
-    height: 45px;
-    color: white;
-
-} */
-/* .btn1 {
+.btn1 {
     width: 1334px; 
     max-width: 100%; 
     background-color: black;
     height: 45px;
     color: white;
-    margin: 0 10px; 
-    display: block; 
-}
-
-
-.btn1s{
-    font-weight: 500;
-    margin: 0 2px;
-} */
-
-
-.btn1 {
-    width: 1334px; /* Sets the button width explicitly */
-    max-width: 100%; /* Prevents overflow */
-    background-color: black;
-    height: 45px;
-    color: white;
     margin: 0 10px;
-    display: flex; /* Enables flexible layout for children */
-    align-items: center; /* Vertically aligns the content inside the button */
-    justify-content: center; /* Horizontally centers the content */
-    gap: 10px; /* Adds space between the image and text */
-    padding: 0 10px; /* Adds horizontal padding inside the button */
-    border: none; /* Removes border */
-    border-radius: 5px; /* Optional: Makes corners rounded */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 0 10px; 
+    border: none; 
+    border-radius: 5px; 
     cursor: pointer;
 }
 
 .btn-logo {
-    height: 45px; /* Adjust the height of the logo */
-    width: auto; /* Maintains aspect ratio */
+    height: 45px; 
+    width: auto; 
     display: inline-block;
 }
 
 .box-pop-cat {
-    display: grid; /* Enables grid layout */
-    grid-template-columns: repeat(7, 1fr); /* Creates 7 equal-width columns */
-    gap: 20px; /* Adds space between grid items */
-    justify-items: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    padding: 20px; /* Adds padding around the grid */
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
+    padding: 20px; 
 }
 
 .item-pop-cat {
-    text-align: center; /* Centers text under each item */
+    text-align: center; 
 }
 
 .item-pop-cat img {
-    width: 120px; /* Increase width to make the circle larger */
-    height: 120px; /* Match height to width for a perfect circle */
-    border-radius: 50%; /* Ensures the circular shape */
-    background-color: #f0f0f0; /* Light grey background for the circle */
-    padding: 20px; /* Adjust padding to add space around the image */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
-    object-fit: contain; /* Ensures the image fits well inside the circle */
+    width: 96px; 
+    height: 105px; 
+    border-radius: 50%; 
+    background-color: #f0f0f0; 
+    padding: 16px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    object-fit: contain;
 
 }
 
 .item-pop-cat p {
-    margin-top: 10px; /* Adds space between the image and text */
-    font-size: 14px; /* Adjust font size */
-    color: #333; /* Dark text color */
+    margin-top: 10px; 
+    font-size: 14px; 
+    color: #333; 
 }
 .item-pop-cat:hover img {
-    width: 120px; /* Increase width to make the circle larger */
-    height: 120px; /* Match height to width for a perfect circle */
+    width: 110px; 
+    height: 110px; 
     border-radius: 50%;
     border: 2px solid blue;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .item-pop-cat:hover p {
-    color: blue; /* Change the text color */
-    font-weight: bold; /* Optional: Make the text bold */
-    transform: scale(1.1); /* Slightly enlarge the text */
-    transition: all 0.3s; /* Smooth transition */
+    color: blue; 
+     font-weight: bold; 
+    transition: all 0.2s; 
     
 }
 
@@ -294,14 +260,258 @@ height: 3rem;
 }
 .brand-item{
     display: flex;
-    height: 80px;
-    width: 80px;
-    padding: 0 4rem;
-    gap: 2rem;
+    max-width: 100%;
+    justify-content: center;
 }
+.brand-item img{
+    height: 100px;
+    width: 100px;
+    
+    /* padding: 0px 5rem;
+    gap: 3rem; */
+}
+/* .brand-item-l{
+    display: flex;
+    height: 83px;
+    width: 80px;
+    padding: 0px 12rem;
+    gap: 3rem;
+} */
 
 .brand-item img:hover{
     border-bottom: 2px solid blue;
-    transition: all 0.3s;
+    transition: all 0.1s;
     
+}
+
+.ban-container {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.sixth-section{
+    padding-top: 3.6rem;
+}
+
+
+.ban {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    background-color: rgb(241, 238, 238);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    overflow: hidden; 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.ban-img-box {
+    position: relative;
+    height: 23rem;
+    width: 100%;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 8s ease-in-out; 
+}
+
+
+.image-container:nth-child(1) {
+    animation: fade 8s infinite; 
+}
+
+
+.image-container:nth-child(2) {
+    animation: fade 8s infinite;
+    animation-delay: 4s; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    border-left: 2px solid #0072ba;
+    margin-left: 15px;
+}
+
+.eng-name {
+    font-size: 16px;
+    color: white;
+    margin-left: 18px;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+}
+
+.ban-text-box{
+    text-align: center;
+    padding-top: 4rem;
+}
+.heading-secondary{
+    font-weight: 500;
+    color: #333;
+}
+
+.ban-text{
+    padding-top: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    
+}
+
+.btn-div{
+    padding-top: 1.5rem;
+}
+.btn {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    width: auto; 
+    height: auto; 
+    border: 3px solid #0072ba;
+    background-color: rgb(241, 238, 238);
+    color: #0072ba; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    border: 1px solid #0072ba;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    border-radius: 1px solid blue;
+    color: #005b94;
+}
+
+.ban-text2{
+    color: #0072ba;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.seventh-section {
+    padding-top: 30px;
+    background-color: #dddbd7;
+    width: 100%;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.need-help-sec {
+    display: flex;
+    flex: 2; 
+    padding-right: 40px;
+    border-right: 1px solid #333;
+    margin-right: 20px;
+}
+
+.face-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.need-help-text {
+    text-align: left;
+    padding-left: 12px;
+}
+
+.help-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.help-text2 {
+    font-size: 0.9rem;
+    padding-top: 10px;
+    color: #333;
+}
+
+.help-text3 {
+    padding-top: 10px;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #333;
+}
+
+.help-text4 {
+    padding-top: 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.help-text5 {
+    padding-top: 4px;
+}
+
+.help-text6 {
+    background-color: white;
+    padding: 7px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.id-text {
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-col {
+    flex: 1; 
+    margin-left: 20px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.social-media-links a {
+    height: 50px;
+    width: 50px;
 }
